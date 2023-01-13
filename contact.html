@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZVRepair - Contact</title>
+        <link href="CSS/contact.css" type="text/css" rel="stylesheet">
+        <link rel="icon" href="IMG/icon.ico" type="image/icon type">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="nav-content-container">
+                <a href="index.html" class="nav-logo"><b style="color: #D65A31";>ZV</b>Repair</a>
+
+                <div class="nav-button-container">
+                    <a href="index.html" class="nav-button">HOME</a>
+                    <a href="contact.html" class="nav-button" id="active">CONTACT</a>
+                    <a href="faq.html" class="nav-button">FAQ</a>
+                </div>
+
+                <div class="burger-button">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="content-wrap">
+                <div class="contact-container">
+                    <h class="contact-header">Contact</h>
+
+                    <form class="contact-form" action="https://formsubmit.co/pgaming2@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="WebRequest">
+                        <div class="name-container">
+                            <input type="text" placeholder="First Name" required class="names" maxlength="17" name="FirstName">
+                            <input type="text" placeholder="Last Name" required class="names" maxlength="17" name="LastName">
+                        </div>
+
+                        <input type="email" placeholder="Email" required class="email" maxlength="45" name="Email">
+                        <textarea maxlength="200" placeholder="Type your response here." required class="text" name="Response"></textarea>
+
+                        <div class="contact-button-container">
+                            <button type="reset" class="contact-button">Reset</button>
+                            <button type="submit" class="contact-button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h class="footer-content">ZVRepair @ <script>document.write(new Date().getFullYear());</script></h>
+            </div>
+        </div>
+
+        <script src="JS/burger-button.js"></script>
+        <script src="JS/navbar-scroll.js"></script>
+    </body>
+</html>

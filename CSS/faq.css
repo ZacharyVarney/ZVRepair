@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Lato&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #292e33;
+}
+
+.navbar
+{
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    background-color: #222831;
+    transition: all 0.2s ease;
+}
+
+.nav-content-container
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-logo
+{
+    color: #EEEEEE;
+    font-family: 'Jost', sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.nav-button-container
+{
+    display: flex;
+}
+
+.nav-button
+{
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin: 0px 15px;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: all 0.2s ease;
+}
+
+.nav-button:hover
+{
+    background-color: #D65A31;
+}
+
+.nav-button#active
+{
+    background-color: #D65A31;
+}
+
+.burger-button
+{
+    display: none;
+    cursor: pointer;
+}
+
+.burger-button div 
+{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.2s ease;
+    background-color: #EEEEEE;
+}
+
+.content-container 
+{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.content-wrap 
+{
+    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 70px;
+    animation: fade-in 0.7s ease-in-out;
+}
+
+.faq-container
+{
+    width: 50%;
+    margin: auto;
+    transition: all 0.2s ease;
+}
+
+.faq-header
+{
+    display: block;
+    color: #EEEEEE;
+    font-family: 'Jost', sans-serif;
+    font-size: 38px;
+    padding: 20px;
+    text-align: center;
+}
+
+.faq-box
+{
+    width: 650px;
+    background-color: #222831;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 20px auto;
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+.faq-question
+{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.faq-hr
+{
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+.faq-answer
+{
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    bottom: 0;
+    position: absolute;
+    background-color: #222831;
+}
+
+.footer-content
+{
+    color: #EEEEEE;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (max-width: 1365px)
+{
+    .nav-content-container
+    {
+        width: 75%;
+    }
+
+    .faq-container
+    {
+        width: 75%;
+    }
+
+    .faq-box
+    {
+        width: 540px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .nav-content-container
+    {
+        width: 90%;
+    }
+
+    .nav-button-container
+    {
+        align-items: center;
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        top: 70px;
+        width: 100%;
+        flex-direction: column;
+        transform: translateX(100%);
+        z-index: 2;
+        background-color: #222831;
+    }
+
+    .nav-button 
+    {
+        opacity: 0.0;
+        margin: 15px 0px;
+    }
+
+    .burger-button
+    {
+        display: block;
+    }
+
+    .faq-container
+    {
+        width: 100%;
+    }
+
+    .faq-box
+    {
+        width: 90%;
+    }
+}
+
+.nav-active 
+{
+    transform: translateX(0%) !important;
+    transition: transform 0.5s ease-in;
+}
+
+.toggle .line1 
+{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 
+{
+    opacity: 0.0;
+}
+
+.toggle .line3 
+{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes nav-link-fade 
+{
+    from 
+    {
+        opacity: 0.0;
+        transform: translateX(50px);
+    }
+    to 
+    {
+        opacity: 1.0;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-in
+{
+    from 
+    {
+        opacity: 0.0;
+    }
+    to 
+    {
+        opacity: 1.0;
+    }
+}
